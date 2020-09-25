@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account | Ecommerce Site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- To Align Text properly -->
+        <link rel="stylesheet" href="products.css" type="text/css">
+        <link rel="stylesheet" href="show.css" type="text/css">
+        <link rel="stylesheet" href="cart.css" type="text/css">
+        <link rel="stylesheet" href="account.css" type="text/css">
+     </head>
+     <body>
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo for website"></a>
+                </div>
+                <nav>
+                <ul id="menuItems">
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="show.html">About</a></li>
+                    <li><a href="cart.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                </nav>
+                <a href="cart.html"><img id="cart" src="images/cart.png"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>  
+        </div>
+        
+        <!---------- Account Page Details -------->
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/image1.png">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+                            <form id="login-form">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button class="btn" type="submit">Login</button> 
+                                <a href="">Forgot Password</a>    
+                            </form>
+                            <form id="reg-form">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button class="btn" type="submit">Register</button> 
+                            </form>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------- Footer ------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios Mobile Phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>      
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                        <p>Our Purpose is to sustainably make the pleasure and benefits of the sports accessible to the many.</p>      
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>LinkedIn</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="copyright">
+                        <p>copyright 2020 - &copy; Pratik Potdukhe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script File -->
+          <script src="script.js"></script> 
+        <!-- Show Images 
+        <script src="show.js"></script>  -->
+        <script src="account.js"></script>
+     </body>       
+</html>    
